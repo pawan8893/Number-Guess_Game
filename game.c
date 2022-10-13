@@ -3,7 +3,7 @@
 #include<time.h>
 int main()
 {
-    int number,guess,nguesses=1;
+    int number,guess,noguesses=1;
     srand(time(0));
     number = rand()%100 +1;
     do{
@@ -19,8 +19,8 @@ int main()
         }
         else 
         {
-            printf("You guessed it in %d attempts\n", nguesses);
+            printf("You guessed it in %d attempts\n", noguesses);
         }
-        nguesses++;
+        noguesses++;
     }while(guess!=number);
 }
